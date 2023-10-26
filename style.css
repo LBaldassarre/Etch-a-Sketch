@@ -4,7 +4,8 @@
     --primary-color:  #3f5f39;
     --secondary-color: #fff;
     --accent-color: #cbe3ca;
-    --shadow: #000;
+    --text-color: #fff;
+    --secondary-text-color: #000;
 }
 
 html, body {
@@ -58,15 +59,16 @@ footer {
 
 .control_pane {
     flex: 3;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
 }
 
 .draw_pane {
     flex: 7;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,3 +76,83 @@ footer {
 }
 
 /* ----------MAIN CONTENT---------- */
+
+/* ----------CONTROL PANE---------- */
+
+.control_pane__controls {
+    flex: 1;
+    max-height: 80%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px 1px var(--accent-color);
+    background-color: var(--secondary-color);
+}
+
+.control_pane__controls__palet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.control_pane__controls__palet__title {
+    flex: 1;
+    color: var(--secondary-text-color);
+}
+
+.control_pane__controls__pentype {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pentype__selector {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pentype__dimmer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pentype__dimmer__title {
+    flex: 1;
+    color: var(--secondary-text-color);
+}
+
+.pentype__dimmer__buttons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.control_pane__controls__board {
+    flex: .5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control_pane__controls__button {
+    width: 40%;
+    height: 55%;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-text-color);
+    box-shadow: 0 0 15px 1px var(--accent-color);
+    background-color: var(--secondary-color);
+}
+
+/* ----------CONTROL PANE---------- */
