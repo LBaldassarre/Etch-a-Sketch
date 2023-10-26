@@ -96,6 +96,7 @@ footer {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .control_pane__controls__palet__title {
@@ -127,8 +128,28 @@ footer {
 }
 
 .pentype__dimmer__title {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dimmer__title {
     flex: 1;
     color: var(--secondary-text-color);
+}
+
+.dimmer__percent {
+    flex: .5;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px 1px var(--accent-color);
+    background-color: var(--secondary-color);
 }
 
 .pentype__dimmer__buttons {
@@ -150,9 +171,84 @@ footer {
     width: 40%;
     height: 55%;
     border-radius: 10px;
-    border: 2px solid var(--secondary-text-color);
+    border: 2px solid var(--primary-color);
     box-shadow: 0 0 15px 1px var(--accent-color);
     background-color: var(--secondary-color);
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.control_pane__controls__button:hover {
+    transform: scale(1.2);
+}
+
+.control_pane__controls__palet__colors {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    width: 2em;
+    height: 2em;
+    background-color: var(--accent-color);
+    border: 0.1px solid #000;
+}
+
+.color11 {
+    background-color: white;
+}
+.color12 {
+    background-color: black;
+}
+.color13 {
+    background-color: gray;
+}
+.color21 {
+    background-color: red;
+}
+.color22 {
+    background-color: darkred;
+}
+.color23 {
+    background-color: lightcoral;
+}
+.color31 {
+    background-color: blue;
+}
+.color32 {
+    background-color: darkblue;
+}
+.color33 {
+    background-color: lightblue;
+}
+.color41 {
+    background-color: green;
+}
+.color42 {
+    background-color: darkgreen;
+}
+.color43 {
+    background-color: lightgreen;
+}
+.color51 {
+    background-color: yellow;
+}
+.color52 {
+    background-color: orange;
+}
+.color53 {
+    background-color: lightgoldenrodyellow;
+}
+.color61 {
+    background-color: palevioletred;
+}
+.color62 {
+    background-color: purple;
+}
+.color63 {
+    background-color: pink;
 }
 
 /* ----------CONTROL PANE---------- */
