@@ -1,0 +1,76 @@
+/* ----------BASE STYLE---------- */
+
+:root {
+    --primary-color:  #3f5f39;
+    --secondary-color: #fff;
+    --accent-color: #cbe3ca;
+    --shadow: #000;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background: rgb(63,95,57);
+    background: linear-gradient(151deg, rgba(63,95,57,1) 0%, rgba(143,161,142,1) 48%, rgba(63,95,57,1) 100%);
+    color: var(--secondary-color);
+}
+
+/* ----------BASE STYLE---------- */
+
+/* ----------FIRST LAYER---------- */
+
+header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5rem;
+}
+
+main {
+    flex: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------FIRST LAYER---------- */
+
+/* ----------MAIN CONTENT---------- */
+
+.control_pane {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.draw_pane {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------MAIN CONTENT---------- */
