@@ -1,9 +1,14 @@
 /* ----------BASE STYLE---------- */
 
 :root {
-    --primary-color:  #3f5f39;
+    /* --primary-color:  #3f5f39;
     --secondary-color: #fff;
     --accent-color: #cbe3ca;
+    --text-color: #fff;
+    --secondary-text-color: #000; */
+    --primary-color:  #1b2d48;
+    --secondary-color: #2c456b;
+    --accent-color: #3c649f;
     --text-color: #fff;
     --secondary-text-color: #000;
 }
@@ -22,8 +27,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    background: rgb(63,95,57);
-    background: linear-gradient(151deg, rgba(63,95,57,1) 0%, rgba(143,161,142,1) 48%, rgba(63,95,57,1) 100%);
+    background: var(--primary-color);
+    background: linear-gradient(151deg, var(--primary-color) 0%, var(--secondary-color) 48%, var(--primary-color) 100%);
     color: var(--secondary-color);
 }
 
@@ -62,16 +67,16 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
 .draw_pane {
-    flex: 7;
+    flex: 8;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -89,7 +94,7 @@ footer {
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 15px 1px var(--accent-color);
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
 }
 
 .control_pane__controls__palet {
@@ -149,7 +154,7 @@ footer {
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 15px 1px var(--accent-color);
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
 }
 
 .pentype__dimmer__buttons {
@@ -169,11 +174,11 @@ footer {
 
 .control_pane__controls__button {
     width: 40%;
-    height: 55%;
+    height: 80%;
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 15px 1px var(--accent-color);
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     transform: scale(1);
     transition: transform .3s;
 }
@@ -192,7 +197,7 @@ footer {
 .color {
     width: 2em;
     height: 2em;
-    background-color: var(--accent-color);
+    background-color: var(--text-color);
     border: 0.1px solid #000;
 }
 
@@ -252,3 +257,54 @@ footer {
 }
 
 /* ----------CONTROL PANE---------- */
+
+
+/* ----------DRAW BOARD---------- */
+
+.draw_pane {
+    padding: 1em;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.draw_pane__board {
+    flex: 1;
+    width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px 1px var(--accent-color);
+    background-color: var(--text-color);
+}
+
+.draw_pane__board__cell{
+    flex: 1;
+    background-color: var(--text-color);
+}
+
+/* ----------DRAW BOARD---------- */
+
+
+/* ----------HEADER---------- */
+
+.header__logo {
+    color: var(--text-color);
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+}
+
+/* ----------HEADER---------- */
+
+
+/* ----------FOOTER---------- */
+
+.footer_text {
+    color: var(--accent-color);
+    font-size: 0.7em;
+}
+
+/* ----------FOOTER---------- */
