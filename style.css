@@ -281,9 +281,27 @@ footer {
     background-color: var(--text-color);
 }
 
-.draw_pane__board__cell{
+.draw_pane__board__cell {
     flex: 1;
+    display: flex;
     background-color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.db_row {
+    width: 100%;
+    border: 0.1px solid #000;
+    flex: 1;
+}
+
+.db_col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 /* ----------DRAW BOARD---------- */
